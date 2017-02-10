@@ -153,6 +153,7 @@
     </Compile>
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\Score.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
