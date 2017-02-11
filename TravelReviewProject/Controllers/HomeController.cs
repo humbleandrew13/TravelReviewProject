@@ -15,14 +15,14 @@ namespace TravelReviewProject.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "People have reviewed some hotels, restaurants, nightlife, and several other activities in different locations. We have assembled them.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "How to contact Humble Travel Reviews:";
 
             return View();
         }
