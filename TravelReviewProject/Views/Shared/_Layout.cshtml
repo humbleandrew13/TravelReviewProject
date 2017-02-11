@@ -6,13 +6,15 @@
     <title>@ViewBag.Title - Humble Travel Reviews</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Playball|Shadows+Into+Light+Two|Sue+Ellen+Francisco" rel="stylesheet">
 </head>
 <body>
     <div class="page-header">
-        <h1>Humble Travel Reviews</h1><h1><small>We may be Humble, but we are still the best.</small></h1>
+        <h1>@Html.ActionLink("Humble Travel Reviews", "Index", "Home", new { area = "" })</h1>
+        <h3>We may be Humble, but we are still the best.</h3>
     </div>
     <div class="navbar-inverse">
-        <div class="container">
+        <div class="container-fluid" id="no-side-margin">
             <div class="navbar-header ">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -24,6 +26,7 @@
             <div class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home", new { @class = "btn btn-lg btn-danger navbar-btn" })</li>
+                    <li>@Html.ActionLink("Reviews", "Index", "Reviews", new { @class = "btn btn-lg btn-success navbar-btn" })</li>
                     <li>@Html.ActionLink("About", "About", "Home", new { @class = "btn btn-lg btn-primary navbar-btn" })</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home", new { @class = "btn btn-lg btn-warning navbar-btn" })</li>
                 </ul>

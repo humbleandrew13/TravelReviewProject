@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 0px;
     padding-bottom: 20px;
+    background-color: #313131;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +23,78 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*Header*/
+.page-header {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 15px;
+    border: 2px solid #337AB7;
+    background-color: #313131;
+}
+
+    .page-header h1 {
+        font-family: 'Playball', cursive;
+        font-weight: bold;
+        font-size: 70px;
+        margin-top: 0px;
+        
+    }
+
+    .page-header a{
+        color: #cc5800;
+        text-decoration: none;
+    }
+
+    .page-header h3 {
+        font-family: 'Shadows Into Light Two', cursive;
+        color: #dcba00;
+    }
+
+/*Navbar*/
+.navbar-inverse {
+    background-color: #313131;
+}
+
+    .navbar-inverse #no-side-margin {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .navbar-inverse .navbar-brand {
+        font-family: 'Playball', cursive;
+        font-weight: bold;
+        font-size: 32px;
+        color: #cc5800;
+        text-decoration: none;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #f5f5f5;
+    background-color: #2f2f2f;
+}
+
+.navbar-btn {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #FFFFFF;
+}
+
+
+    /*Footer*/
+    footer{
+        font-family: 'Shadows Into Light Two', cursive;
+        color: #dcba00;
+        font-size: 20px;
+    }
