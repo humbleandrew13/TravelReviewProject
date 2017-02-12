@@ -91,6 +91,27 @@ textarea {
     border-color: #FFFFFF;
 }
 
+/*Review Page Styling*/
+.reviews{
+    color: #FFFFFF;
+}
+
+
+/*RenderBody section*/
+.container h2{
+    color: #FFFFFF;
+}
+
+/*changing text color on Create Review page*/
+.create{
+    color: #FFFFFF;
+}
+
+    /*Making the Review box larger*/
+#DetailedReview{
+        max-width: 100%;
+}
+
 
     /*Footer*/
     footer{

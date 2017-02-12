@@ -10,6 +10,7 @@ namespace TravelReviewProject.Models
     {
         [Key]
         public int ScoreID { get; set; }
+        [Display(Name = "Score")]
         public int ReviewScore { get; set; }
         public virtual ICollection<Review> Review { get; set; }
     }

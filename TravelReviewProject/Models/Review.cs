@@ -12,19 +12,28 @@ namespace TravelReviewProject.Models
         [Key]
         public int ReviewID { get; set; }
 
+        [Display(Name = "Date of Review")]
         public DateTime DateOfReview { get; set; }
+        [Display(Name = "Name of Place Being Reviewed")]
         public string NameOfPlace { get; set; }
+        [Display(Name = "Location of Place Being Reviewed")]
         public string LocationOfPlace { get; set; }
+        [Display(Name = "Date of Visit")]
         public DateTime DateOfVisit { get; set; }
+        [Display(Name = "Review Title/Summary")]
         public string ReviewTitle { get; set; }
+        [Display(Name = "Detailed Review")]
         public string DetailedReview { get; set; }
+        [Display(Name = "Reviewer's Name")]
         public string UserName { get; set; }
 
         [ForeignKey("Category")]
+        [Display(Name = "Category")]
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
 
         [ForeignKey("Score")]
+        [Display(Name = "Score")]
         public int ScoreID { get; set; }
         public virtual Score Score { get; set; }
     }
