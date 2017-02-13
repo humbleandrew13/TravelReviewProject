@@ -13,12 +13,14 @@ namespace TravelReviewProject.Models
         public int ReviewID { get; set; }
 
         [Display(Name = "Date of Review")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DateOfReview { get; set; }
         [Display(Name = "Name of Place Being Reviewed")]
         public string NameOfPlace { get; set; }
         [Display(Name = "Location of Place Being Reviewed")]
         public string LocationOfPlace { get; set; }
         [Display(Name = "Date of Visit")]
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime DateOfVisit { get; set; }
         [Display(Name = "Review Title/Summary")]
         public string ReviewTitle { get; set; }
