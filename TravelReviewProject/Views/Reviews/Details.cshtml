@@ -1,90 +1,27 @@
 ﻿@model TravelReviewProject.Models.Review
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Full Review";
 }
 
-<h2>Details</h2>
+@*I decided to use panels to display my reviews*@
 
-<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.CategoryName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Category.CategoryName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Score.ScoreID)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Score.ScoreID)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DateOfReview)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DateOfReview)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NameOfPlace)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NameOfPlace)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.LocationOfPlace)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.LocationOfPlace)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DateOfVisit)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DateOfVisit)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ReviewTitle)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ReviewTitle)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DetailedReview)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DetailedReview)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.UserName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.UserName)
-        </dd>
-
-    </dl>
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">"@Html.DisplayFor(model => model.ReviewTitle)" by @Html.DisplayFor(model => model.UserName)</h3>
+    </div>
+    <div class="panel-body top-info">
+        <p>Visited @Html.DisplayFor(model => model.NameOfPlace) in @Html.DisplayFor(model => model.LocationOfPlace) on @Html.DisplayFor(model => model.DateOfVisit)</p>
+    </div>
+    <div class="panel-body top-info2">
+        <p>&bull; This @Html.DisplayFor(model => model.Category.CategoryName) was rated @Html.DisplayFor(model => model.Score.ReviewScore) out of 10 on @Html.DisplayFor(model => model.DateOfReview) &bull;</p>
+    </div>
+    <div class="panel-body detailed-review">
+        <h3>@Html.DisplayFor(model => model.UserName) said:</h3>
+        <p>@Html.DisplayFor(model => model.DetailedReview)</p>
+    </div>
+    <div class="panel-body bottom-info">
+        <p>Are you @Html.DisplayFor(model => model.UserName)? If so, you may @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) this listing</p>
+        <p>@Html.ActionLink("Back to Reviews List", "Index")</p>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

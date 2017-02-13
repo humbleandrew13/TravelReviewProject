@@ -13,7 +13,7 @@ namespace TravelReviewProject.Models
         public int ReviewID { get; set; }
 
         [Display(Name = "Date of Review")]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime DateOfReview { get; set; }
         [Display(Name = "Name of Place Being Reviewed")]
         public string NameOfPlace { get; set; }

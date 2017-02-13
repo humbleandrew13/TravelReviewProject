@@ -1,9 +1,11 @@
-﻿body {
+﻿/*Setting some defaults to shortcut later*/
+body {
     padding-top: 0px;
     padding-bottom: 20px;
     background-color: #313131;
 }
 
+/*Some of the padding made colors look strange*/
 .body-content {
     padding-left: 10px;
     padding-right: 10px;
@@ -13,6 +15,7 @@
     white-space: normal;
 }
 
+/*makes standard text boxes not always 100%*/
 input,
 select,
 textarea {
@@ -37,16 +40,15 @@ textarea {
         font-weight: bold;
         font-size: 70px;
         margin-top: 0px;
-        
     }
 
     .page-header h3 {
         font-family: 'Shadows Into Light Two', cursive;
         color: #dcba00;
     }
-    
+
     /*Changing the link look*/
-    .page-header a{
+    .page-header a {
         color: #cc5800;
         text-decoration: none;
     }
@@ -70,8 +72,8 @@ textarea {
     }
 
     .navbar-inverse .navbar-nav > li > a {
-    color: #FFFFFF;
-}
+        color: #FFFFFF;
+    }
 
 .navbar-btn {
     margin-left: 5px;
@@ -82,23 +84,44 @@ textarea {
     border-color: #FFFFFF;
 }
 
-    /*Navbar Button Hover*/
+/*Navbar Button Hover*/
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     color: #000000;
     background-color: #808080;
 }
 
+/*Home Page styling*/
+.jumbotron {
+    text-align: center;
+    background-color: #535353;
+}
+
+    .jumbotron h1 {
+        font-family: 'Playball', cursive;
+        color: #cc5800;
+    }
+
+    .jumbotron p {
+        font-family: 'Shadows Into Light Two', cursive;
+        color: #dcba00;
+    }
+
+    .jumbotron .btn {
+        font-family: 'Handlee', cursive;
+        text-wrap: normal;
+    }
+
 /*Review Page Styling*/
-.reviews{
+.reviews {
     font-family: 'Shadows Into Light Two', cursive;
     color: #FFFFFF;
     text-align: center;
 }
 
 /*Reviews page header*/
-.container .reviews h2{
+.container .reviews h2 {
     font-size: 60px;
-    color: #535353;
+    color: #cc5800;
     font-weight: bolder;
     border: 2px solid white;
     display: inline-block;
@@ -107,7 +130,7 @@ textarea {
     padding-right: 10px;
 }
 
-.container .reviews .btn{
+.container .reviews .btn {
     font-size: 24px;
     background-color: #535353;
     color: cadetblue;
@@ -116,69 +139,125 @@ textarea {
     font-weight: bolder;
 }
 
-/*Changing thumbnail content*/
-.thumbnail{
+/*Changing thumbnail content aesthetic on Reviews Index*/
+.thumbnail {
     background-color: #535353;
     height: 330px;
     border-radius: 0px;
     border-color: #069b00;
 }
 
-.thumbnail h3{
+    .thumbnail h3 {
         color: #dcba00;
         font-size: 26px;
         text-align: center;
         font-weight: bolder;
-}
+    }
 
-.thumbnail p{
-    color: #ff6363;
-    font-weight: bold;  
-    font-size: 20px;
-}
+    .thumbnail p {
+        color: #b20606;
+        font-weight: bold;
+        font-size: 20px;
+    }
 
-.thumbnail .btn{
+    .thumbnail .btn {
+        border-radius: 0px;
+        background-color: #313131;
+        color: cadetblue;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: 'Handlee', cursive;
+    }
+
+/*Details styling*/
+.panel {
+    border-color: #b20606;
     border-radius: 0px;
-    background-color: #313131;
-    color: cadetblue;
-    font-weight: bold;
-    text-decoration: none;
-    font-family: 'Handlee', cursive;
+    background-color: #7e7e7e;
 }
 
+.panel-title {
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bolder;
+    font-size: 34px;
+    background-color: #535353;
+    color: #dcba00;
+}
+
+.panel-info > .panel-heading {
+    background-color: #535353;
+    border: 3px solid #b20606;
+}
+
+.top-info, .top-info2 {
+    text-align: center;
+    border-bottom: 1px solid #b20606;
+    color: darkslateblue;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.detailed-review {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 24px;
+}
+
+    .detailed-review h3 {
+        font-size: 30px;
+    }
+
+.bottom-info {
+    text-align: center;
+    border-top: 1px solid #b20606;
+    color: darkslateblue;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    .bottom-info a {
+        color: #b20606;
+    }
 
 /*RenderBody section*/
-.container h2{
+.container h2 {
     color: #FFFFFF;
 }
 
 /*changing text color on Create Review page*/
-.create{
+.create {
     color: #FFFFFF;
 }
 
-    /*Making the Review box larger*/
-#DetailedReview{
-        max-width: 100%;
+/*Making the Review box larger*/
+#DetailedReview {
+    max-width: 100%;
 }
 
 
-    /*Footer*/
-    footer{
-        font-family: 'Shadows Into Light Two', cursive;
-        color: #dcba00;
-        font-size: 20px;
-    }
+/*Footer*/
+footer {
+    font-family: 'Shadows Into Light Two', cursive;
+    color: #dcba00;
+    font-size: 20px;
+}
 
 
-    /*About Page*/
-    .about, .contact{
-        color: #FFFFFF;
-        font-family: 'Shadows Into Light Two', cursive;
-        text-align: center;
-        max-width: 600px;
-    }
+/*About Page*/
+.about, .contact {
+    color: #FFFFFF;
+    font-family: 'Shadows Into Light Two', cursive;
+    text-align: center;
+    max-width: 600px;
+}
 
-    .about h1, .contact h1{
+    .about h1, .contact h1 {
         color: #BBB500;
     }
+
+/*Making the Review Edit legible*/
+.edit {
+    color: white;
+}

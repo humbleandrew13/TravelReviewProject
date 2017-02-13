@@ -6,13 +6,18 @@
     <title>@ViewBag.Title - Humble Travel Reviews</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @*Added some fonts to play with*@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Playball|Shadows+Into+Light+Two|Sue+Ellen+Francisco|Handlee" rel="stylesheet">
 </head>
 <body>
+    @*Made a new header to sit up top*@
     <div class="page-header">
         <h1>@Html.ActionLink("Humble Travel Reviews", "Index", "Home", new { area = "" })</h1>
         <h3>We may be Humble, but we are still the best.</h3>
     </div>
+
+    @*My navbar is simple and has the named logo on the left, and buttons on the right for different sites that turn into a hamburger dropdown
+    I changed the color when hovering on the buttons*@
     <div class="navbar-inverse">
         <div class="container-fluid" id="no-side-margin">
             <div class="navbar-header ">
@@ -36,6 +41,7 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+        @*Simple footer*@
         <footer>
             <p>&copy; @DateTime.Now.Year - Humble Travel Reviews, Cleveland, OH</p>
         </footer>
